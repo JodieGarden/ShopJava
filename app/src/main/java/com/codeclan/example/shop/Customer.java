@@ -28,6 +28,7 @@ public class Customer {
     public void setName(String name) {
         this.name = name;
     }
+
     public Debit getDebit() {
         return this.debit;
     }

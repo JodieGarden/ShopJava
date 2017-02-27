@@ -16,11 +16,11 @@ public class TestCustomer {
 
     @Before
     public void before() {
-        customer = new Customer("Jenn",debit, store);
-
         debit = new Debit("RBS", 1000.0, 1000.0);
 
         store = new Store("Topshop", 1000.0);
+
+        customer = new Customer("Jenn",debit, store);
 
     }
 
@@ -38,18 +38,11 @@ public class TestCustomer {
     public void testGetStore(){
         assertEquals(store, customer.getStore());
     }
-    @Test
-    public void testGetPaymentMethod() {
-        assertEquals("RBS", customer.getDebit());
-    }
 
-    @Test
-    public void testGetPaymentMethod2() {
-        assertEquals("Topshop", customer.getStore());
     }
 
 
-}
+
 
 
 
